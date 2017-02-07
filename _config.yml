@@ -15,10 +15,8 @@ description: > # this means to ignore newlines until "baseurl:"
   passions; moonlighting as a blog about various topics ranging from sports, to technology, to food, etc.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: Mr_Innovative
-github_username:  ngbrown11
-linkedin_username: Nathaniel Brown
-stackoverflow_username: Nate
+github_username:  wavedash-game
+
 excerpt_separator: <!--sep-->
 defaults: # YAML default variables
   -
@@ -26,14 +24,7 @@ defaults: # YAML default variables
       path: "_posts"
     values:
       layout: "post"
-      author: "Nathaniel Brown"
       permalink:    /:categories/:title/
-  -
-    scope:
-      path: "_posts/projects"
-    values:
-      categories: "Projects"
-      tags: "project"
 
 # Build settings
 markdown: kramdown
