@@ -2,3 +2,19 @@
 ---
 
 @import "{{ site.theme }}";
+
+/*
+ * Header styling
+ */
+.nav {
+  display: inline-block;
+  font-size: 1em;
+  line-height: 2;
+}
+
+.nav.left {
+  float: left;
+}
+.nav.right {
+  float: right;
+}
