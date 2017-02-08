@@ -3,6 +3,8 @@
 
 @import "{{ site.theme }}";
 
+// Variables
+$main-color:        #081edd; // #b5e853
 // Width of the content area
 $content-width:    900px;
 
@@ -31,17 +33,17 @@ $content-height:   1200px;
 .nav {
   display: inline-block;
   font-size: 1em;
-  line-height: 2;
+  line-height: 1.75;
   text-transform: uppercase;
 }
 
 .nav.left {
   float: left;
-  margin-left: 10%;
+  margin-left: 8%;
 }
 .nav.right {
   float: right;
-  margin-right: 10%;
+  margin-right: 8%;
 }
 
 .nav a {
@@ -54,7 +56,9 @@ $content-height:   1200px;
 // Header title
 #super-title {
     font-size: 36px;
+    color: $main-color;
 }
+
 
 // Image styling
 .about-img {
@@ -77,3 +81,27 @@ $content-height:   1200px;
         text-align: center;
     }
 }
+
+/*
+ *
+ * Hacker Theme Overrides
+ * */
+ header {
+     border-bottom: 1px dashed $main-color;
+ }
+ header h1 {
+     &:before {
+         content: "~ ";
+         font-size: 30px;
+     }
+     &::after {
+         content: " ~";
+         font-size: 30px;
+     }
+ }
+ h1, h2, h3, h4, h5, h6 {
+     color: $main-color;
+ }
+ hr {
+     color: $main-color;
+ }
