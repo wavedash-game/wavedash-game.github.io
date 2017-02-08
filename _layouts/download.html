@@ -24,12 +24,13 @@ layout: default
  -->
 
   <h1>{{ site.title | default: site.github.repository_name }}</h1>
-  <h4>You can download WaveDash below.</h4>
+  <p>You can donwload WaveDash below.</p>
+  <h4>Run the executable and play in a 16:9 or 16:10 aspect ratio.\nPlay with an xBox controller.</h4>
 
   <section id="downloads">
     {% if site.show_downloads %}
       <a href="https://github.com/wavedash-game/wavedash/zipball/master" onclick="instruct" class="btn">Download as .zip</a>
-      <a href="{{ site.github.tar_url }}" onclick="instruct" class="btn">Download as .tar.gz</a>
+      <a href="https://github.com/wavedash-game/wavedash/tarball/master" onclick="instruct" class="btn">Download as .tar.gz</a>
     {% endif %}
     <!-- Was originally below {{ site.github.repository_url }} -->
     <a href="https://github.com/wavedash-game/wavedash" class="btn btn-github"><span class="icon"></span>View on GitHub</a>

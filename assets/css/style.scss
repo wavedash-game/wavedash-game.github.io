@@ -51,7 +51,7 @@ $content-height:   1200px;
         border-bottom: solid 1px;
     }
 }
-
+// Header title
 #super-title {
     font-size: 36px;
 }
@@ -60,7 +60,7 @@ $content-height:   1200px;
 .about-img {
     vertical-align: middle;
     text-align: center;
-    margin-bottom: 10%;
+    margin-bottom: 7.5%;
 
     #id {
         border-radius: 5%;
@@ -74,6 +74,6 @@ $content-height:   1200px;
         // }
     }
     figure {
-        text-align: justify;
+        text-align: center;
     }
 }
