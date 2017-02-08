@@ -4,7 +4,8 @@
 @import "{{ site.theme }}";
 
 // Variables
-$main-color:        #081edd; // #b5e853
+$main-color:        #0b35e0; // #b5e853
+$minor-color:       #63c0f5;
 // Width of the content area
 $content-width:    900px;
 
@@ -55,7 +56,7 @@ $content-height:   1200px;
 }
 // Header title
 #super-title {
-    font-size: 36px;
+    font-size: 40px;
     color: $main-color;
 }
 
@@ -80,6 +81,9 @@ $content-height:   1200px;
     figure {
         text-align: center;
     }
+    a {
+        text-decoration: none;
+    }
 }
 
 /*
@@ -88,6 +92,9 @@ $content-height:   1200px;
  * */
  header {
      border-bottom: 1px dashed $main-color;
+     a {
+         text-decoration: none;
+     }
  }
  header h1 {
      &:before {
@@ -100,8 +107,11 @@ $content-height:   1200px;
      }
  }
  h1, h2, h3, h4, h5, h6 {
-     color: $main-color;
+     color: $minor-color;
  }
  hr {
      color: $main-color;
+ }
+ a {
+     text-decoration: none;
  }
