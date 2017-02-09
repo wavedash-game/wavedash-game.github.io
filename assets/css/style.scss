@@ -82,8 +82,10 @@ $content-height:   1200px;
     text-align: center;
     margin-bottom: 7.5%;
 
-    #id {
-        border-radius: 5%;
+    #wave-pic {
+        // border-radius: 5%; for wavedash logo
+        max-width: 600px; // For swellgames logo
+        max-height: 600px;
     }
     img {
         display: block;
