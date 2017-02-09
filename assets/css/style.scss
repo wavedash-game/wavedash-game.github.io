@@ -4,15 +4,14 @@
 @import "{{ site.theme }}";
 
 // Variables
-$main-color:        #0b38ed; // #b5e853
+$main-color:        #2f4591; // #0b38ed; // #b5e853
 $minor-color:       #27b2d8; // #63c0f5
 // Width of the content area
 $content-width:    900px;
 
 $on-palm:          720px;
 $on-laptop:        800px;
-// Height of the content area
-$content-height:   1200px;
+$wide-screen:      1200px;
 
 
 // Use media queries like this:
@@ -38,7 +37,7 @@ $content-height:   1200px;
   text-transform: uppercase;
 
   @include media-query($on-laptop) {
-      font-size: 2.5em;
+      font-size: 32px;
       line-height: 2.5;
   }
 }
@@ -61,7 +60,7 @@ $content-height:   1200px;
 }
 // Header title
 #super-title {
-    font-size: 58px;
+    font-size: 64px;
     text-align: center;
     color: $main-color;
     -webkit-text-fill-color: #151515; /* Will override color (regardless of order) */
@@ -69,7 +68,7 @@ $content-height:   1200px;
     -webkit-text-stroke-color: white;
 
     @include media-query($on-laptop) {
-        font-size: 68px;
+        font-size: 72px;
     }
 }
 #site-description {
@@ -84,8 +83,8 @@ $content-height:   1200px;
 
     #wave-pic {
         // border-radius: 5%; for wavedash logo
-        max-width: 600px; // For swellgames logo
-        max-height: 600px;
+        max-width: 300px; // For swellgames logo
+        max-height: 300px;
     }
     img {
         display: block;
@@ -111,6 +110,13 @@ $content-height:   1200px;
      @include media-query($on-laptop) {
          font-size: 36px;
          line-height: 2.25;
+     }
+ }
+ .comtainer {
+     width: 80%;
+     max-width: 600px;
+     @include media-query($wide-screen) {
+         max-width: 800px;
      }
  }
  header {
