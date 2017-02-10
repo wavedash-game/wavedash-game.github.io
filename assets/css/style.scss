@@ -60,16 +60,16 @@ $wide-screen:      1200px;
 }
 // Header title
 #super-title {
-    font-size: 64px;
+    font-size: 72px;
     text-align: center;
     color: $main-color;
     -webkit-text-fill-color: #151515; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: white;
 
-    @include media-query($on-laptop) {
-        font-size: 72px;
-    }
+    // @include media-query($on-laptop) {
+    //     font-size: 72px;
+    // }
 }
 #site-description {
     text-align: center;
